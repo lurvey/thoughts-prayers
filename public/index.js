@@ -1,4 +1,4 @@
-var socket = io.connect('http://172.18.8.120:3000/');  // connect to server
+var socket = io.connect();  // connect to server
 
 socket.on('connect', function(data){ // when connected, do something
   console.log("connected to the server" + socket.id); //log out id

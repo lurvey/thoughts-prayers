@@ -1,5 +1,5 @@
 
-var socket = io.connect('http://172.18.8.120:3000/'); // set up a place for us to connect to, and try to connect
+var socket = io.connect(); // set up a place for us to connect to, and try to connect
 
 socket.on('connect', function(data){ // when we are connected do something
   console.log("connected to the server" + socket.id); // log out out socket's id, some long number that is unique

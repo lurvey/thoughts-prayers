@@ -3,8 +3,10 @@ var app = express(); // starts express running
 var server = require('http').Server( app ) // start server instance on a port
 var io = require('socket.io')(server) // use socket.io for realtime connections aka websockets
 
-server.listen(3000, function(){ // setup a server on port 3000, do a callback when it started successfully
-  console.log("server started on 3000")
+var port = process.env.port || 8000
+
+server.listen(port, function(){ // setup a server on port 3000, do a callback when it started successfully
+  console.log("server is started" + port)
 })
 
 app.use( express.static('public') ) // server out everything that is in the publick folder.
