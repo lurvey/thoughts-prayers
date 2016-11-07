@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+}
+
+.pushButton {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.likeButton {
+  font-size: 30vw;
+  color: #0000ff;
+  background-color: #fff;
+  border: 0px;
+}
+
+.pushButton:active {
+  background-color: red;
+}
+
+.likeButton:active {
+  background-color: red;
+}
